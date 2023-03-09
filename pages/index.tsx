@@ -29,7 +29,7 @@ const defaultValues: FormValues = {
 
   finance: {
     advanced: false,
-    amount: 50000,
+    amount: 0,
     loanType: "annuity",
     interestRate: 1,
     period: 25,
