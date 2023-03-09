@@ -4,6 +4,7 @@ const nextConfig = {
   i18n: {
     locales: ["en", "fi-FI",],
     defaultLocale: "fi-FI",
+    localeDetection: false,
   },
   swcMinify: true,
   images: {
