@@ -54,7 +54,6 @@ export function calculateLoanExpenses(
   const interestInstalment = calculateInterestInstallment(
     amount,
     interestRate,
-    period
   );
 
   switch (loanType) {
@@ -121,8 +120,8 @@ export function calculateInterestFractionPerPeriod(interest = 0) {
   return currency(interest, { precision: 9 }).divide(100).divide(12);
 }
 
-export function calculateInterestInstallment(amount, interest, period) {
-  const interestFraction = calculateInterestFractionPerPeriod(interest, period);
+export function calculateInterestInstallment(amount, interest) {
+  const interestFraction = calculateInterestFractionPerPeriod(interest);
 
   return currency(amount, { precision: 2 }).multiply(interestFraction);
 }
