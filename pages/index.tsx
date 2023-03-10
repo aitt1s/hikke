@@ -37,7 +37,7 @@ const defaultValues: FormValues = {
 
   solFinance: {
     advanced: false,
-    amount: 50000,
+    amount: 0,
     loanType: "annuity",
     interestRate: 0.9,
     period: 20,
